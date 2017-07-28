@@ -1,0 +1,63 @@
+
+<style>
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body > * {
+        flex-grow: 1;
+    }
+    header {
+        flex-basis: 100%;
+        height: 200px;
+        background: red;
+    }
+    footer {
+        flex-basis: 100%;
+        height: 200px;
+        background: green;
+    }
+    main {
+        flex-basis: 400px;
+        min-width: 400px;
+        background: orange;
+    }
+    aside {
+        background: yellow;
+        min-width: 200px;
+        flex-basis: 200px;
+    }
+    @media ( max-width: 616px ) {
+        header { order: 1 }
+        aside { order: 2 }
+        main { order: 3 }
+        footer { order: 4 }
+    }
+</style>
+
+<body>
+    <header></header>
+    <main>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et urna hendrerit, porta nulla sed, condimentum tellus. Quisque auctor magna a ipsum pulvinar, vel dictum ligula ullamcorper. Curabitur lacinia commodo tristique. Sed vitae placerat nisi, eu eleifend augue. Praesent nec ex non orci volutpat pulvinar. Sed et augue ut orci ornare ornare eget a nibh. Cras fermentum, leo vitae congue vestibulum, diam neque convallis turpis, ac varius lacus arcu ac neque.
+        </p>
+        <p>
+        Nullam dictum metus in mi efficitur vulputate. Fusce faucibus massa erat, at viverra ex faucibus vitae. Sed dictum blandit odio, vel interdum mauris feugiat nec. Donec commodo mattis dolor sagittis elementum. Mauris hendrerit in ante et rhoncus. Nam ornare dui eget vestibulum scelerisque. Aliquam a dolor semper, pulvinar nisi et, aliquet libero. Morbi non nunc ut lorem ultricies facilisis in ac tellus. Nulla ex nibh, feugiat volutpat porta id, congue quis lorem. In dignissim lacinia nulla nec aliquet. Nullam in tincidunt elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam egestas mi ut tortor hendrerit, quis sagittis tellus aliquam. Vestibulum est turpis, lobortis id pellentesque eu, efficitur sit amet erat.
+        </p>
+        <p>
+        Nulla accumsan mi leo, at aliquet libero pulvinar quis. Suspendisse et sagittis mi, a sodales lorem. Etiam viverra viverra sapien. Proin volutpat in ex ac mollis. Mauris eleifend scelerisque tellus sed vulputate. Nulla facilisi. Donec fermentum lorem vitae libero hendrerit, quis pretium mauris mollis. In quis neque congue, consectetur lectus et, facilisis libero. Mauris mollis lacus justo, in facilisis odio convallis vitae. Nam posuere nibh a libero varius, eu malesuada diam sollicitudin. Sed mollis mauris nec consectetur semper.
+        </p>
+        <p>
+        Curabitur volutpat, libero consectetur mollis ullamcorper, quam mi tempus ipsum, placerat pharetra erat mi ac tellus. Curabitur dictum fermentum neque ac convallis. Phasellus luctus faucibus erat eget finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque condimentum quam in pretium consectetur. Duis euismod laoreet ex non ornare. Cras imperdiet ante et imperdiet placerat. Aliquam non viverra libero, ac ultrices orci.
+        </p>
+        <p>
+        Pellentesque tristique augue neque, ut vehicula lorem fringilla eu. Sed id faucibus augue, a mattis ligula. Maecenas eget ornare urna, sit amet sodales dui. In hac habitasse platea dictumst. Curabitur pulvinar convallis sollicitudin. Aliquam vel nulla sit amet lacus mattis tristique. Integer commodo mauris a lectus sodales convallis. Mauris vitae ante eget nisl sodales efficitur a ac nunc. Sed justo diam, tincidunt ut nunc sit amet, interdum porta urna. Nam felis diam, rhoncus non dui a, bibendum hendrerit arcu. Fusce quis dictum purus. Aenean quis quam volutpat, lacinia neque vel, feugiat nisi. Nulla elementum sodales tellus eget imperdiet. Fusce cursus eget felis eget pellentesque. Donec a nunc vitae ligula rhoncus egestas. Ut sem mauris, faucibus eu massa ut, porta elementum velit.
+        </p>
+    </main>
+    <aside>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et urna hendrerit, porta nulla sed, condimentum tellus. Quisque auctor magna a ipsum pulvinar, vel dictum ligula ullamcorper. Curabitur lacinia commodo tristique. Sed vitae placerat nisi, eu eleifend augue. Praesent nec ex non orci volutpat pulvinar. Sed et augue ut orci ornare ornare eget a nibh. Cras fermentum, leo vitae congue vestibulum, diam neque convallis turpis, ac varius lacus arcu ac neque.
+        </p>
+    </aside>
+    <footer></footer>
+</body>

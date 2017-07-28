@@ -1,0 +1,106 @@
+.flex, .flex-content {
+    display: flex;
+}
+.flex * {
+    height: 200px;
+    width: 200px;
+}
+.flex :nth-child(9n+1), .flex-content :nth-child(9n+1) {
+    background: red;
+}
+.flex :nth-child(9n+2), .flex-content :nth-child(9n+2) {
+    background: orange;
+}
+.flex :nth-child(9n+3), .flex-content :nth-child(9n+3) {
+    background: yellow;
+}
+.flex :nth-child(9n+4), .flex-content :nth-child(9n+4) {
+    background: green;
+}
+.flex :nth-child(9n+5), .flex-content :nth-child(9n+5) {
+    background: blue;
+}
+.flex :nth-child(9n+6), .flex-content :nth-child(9n+6) {
+    background: indigo;
+}
+.flex :nth-child(9n+7), .flex-content :nth-child(9n+7) {
+    background: violet;
+}
+.flex :nth-child(9n+8), .flex-content :nth-child(9n+8) {
+    background: brown;
+}
+.flex :nth-child(9n+9), .flex-content :nth-child(9n+9) {
+    background: black;
+}
+
+.no-shrink > * {
+    flex-shrink: 0;
+}
+
+.grow > * {
+    flex-grow: 1;
+}
+
+.no-basis > * {
+    flex-basis: 0;
+}
+.basis-100 > * {
+    flex-basis: 100%;
+}
+
+.flex.vary :nth-child(4n+1) {
+    height: 100px;
+    width: 100px;
+}
+.flex.vary :nth-child(4n+2) {
+    height: 150px;
+}
+.flex.vary :nth-child(4n+3) {
+    height: 50px;
+    width: 50px;
+}
+.flex.vary :nth-child(4n+4) {
+    height: 100px;
+    width: 200px;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-center {
+    justify-content: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-stretch {
+    align-items: stretch;
+}
+
+.column {
+    flex-direction: column;
+}
+.column-reverse {
+    flex-direction: column-reverse;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+

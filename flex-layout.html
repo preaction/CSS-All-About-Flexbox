@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<style>
+body {
+    font: 12pt Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background: blue;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    margin-bottom: 0;
+}
+header address {
+    font-size: 10pt;
+    white-space: pre-line;
+    font-style: normal;
+}
+nav ul {
+    list-style: none;
+    margin: 0 1em;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin: 0 0.5em;
+}
+.container {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+main {
+    min-width: 500px;
+    width: 70%;
+    flex-grow: 1;
+}
+.sidebar {
+    width: 30%;
+    flex-grow: 1;
+}
+.two-column {
+    display: flex;
+    flex: 1 1 50%;
+    flex-flow: row wrap;
+    list-style: disc inside;
+    margin: 0 1.5em;
+    padding: 0;
+}
+.two-column li {
+    width: 50%;
+}
+.outline * {
+    outline: 1px dotted hotpink;
+}
+</style>
+
+<header class="header">
+    <h1>Pet Palace</h1>
+    <address>1000 Example Road.
+        Chicago, IL 60010
+        (312) 555-0123
+        Open from 10:00 AM to 8:00 PM every day!
+    </address>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+    </ul>
+</nav>
+
+
+<div class="container">
+    <main>
+        <h2>Welcome to our store!</h2>
+        <p>Pet Palace has all your pet needs!</p>
+        <ul class="two-column">
+            <li>A wide selection of food for cats, dogs, birds, fish, and more</li>
+            <li>On-site grooming and boarding services</li>
+            <li>Veterinary doctor on-call for emergencies</li>
+            <li>Equipment and supplies for salt- and fresh-water fish tanks</li>
+            <li>Friendly and well-trained staff to answer any questions</li>
+            <li>Everything you need for your pet's health and well-being</li>
+        </ul>
+    </main>
+
+    <div class="sidebar">
+        <h4>What's new!</h4>
+        <ul>
+            <li><b>2017-07-04</b>: We now stock new brands of
+            all-natural, high quality cat food!</li>
+            <li><b>2017-06-30</b>: Check out our newly-remodelled
+            grooming and boarding rooms!</li>
+            <li><b>2017-06-12</b>: Puppy parade! Come adopt an
+            adorable puppy from the Humane Society today!</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2017 Pet Palace, LLC
+</footer>
+

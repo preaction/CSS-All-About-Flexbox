@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<style>
+body {
+    font: 12pt Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background: blue;
+    color: white;
+}
+header h1 {
+    float: left;
+    width: 70%;
+    margin-bottom: 0;
+}
+header address {
+    font-size: 10pt;
+    white-space: pre-line;
+    font-style: normal;
+}
+nav {
+    clear: both;
+    overflow: hidden;
+}
+nav ul {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+nav li {
+    float: left;
+    list-style: none;
+    margin-right: 1em;
+}
+footer {
+    clear: both;
+}
+.sidebar {
+    float: right;
+    width: 20%;
+}
+.two-column li {
+    width: 46%;
+    float: left;
+    margin-left: 2%;
+}
+.two-column {
+    overflow: hidden;
+}
+.outline * {
+    outline: 1px dotted hotpink;
+}
+</style>
+<div class="outline">
+
+<header class="header">
+    <h1>Pet Palace</h1>
+    <address>1000 Example Road.
+        Chicago, IL 60010
+        (312) 555-0123
+        Open from 10:00 AM to 8:00 PM every day!
+    </address>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+    </ul>
+</nav>
+
+<div class="sidebar">
+    <h4>What's new!</h4>
+    <ul>
+        <li><b>2017-07-04</b>: We now stock new brands of
+        all-natural, high quality cat food!</li>
+        <li><b>2017-06-30</b>: Check out our newly-remodelled
+        grooming and boarding rooms!</li>
+        <li><b>2017-06-12</b>: Puppy parade! Come adopt an
+        adorable puppy from the Humane Society today!</li>
+    </ul>
+</div>
+
+<main>
+    <h2>Welcome to our store!</h2>
+    <p>Pet Palace has all your pet needs!</p>
+    <ul class="two-column">
+        <li>A wide selection of food for cats, dogs, birds, fish, and more</li>
+        <li>On-site grooming and boarding services</li>
+        <li>Veterinary doctor on-call for emergencies</li>
+        <li>Equipment and supplies for salt- and fresh-water fish tanks</li>
+        <li>Friendly and well-trained staff to answer any questions</li>
+        <li>Everything you need for your pet's health and well-being</li>
+    </ul>
+</main>
+
+<footer>
+    &copy; 2017 Pet Palace, LLC
+</footer>
+
+</div>
